@@ -14,7 +14,7 @@ This repo contains files for a PoC to demonstrate the following requirements fro
 4. **Network ingress to NGINX Ingress Controller**. This lab doesn't cover how to get traffic into your K8s cluster. You must be able to expose the NGINX Ingress Controllers to network traffic yourself. Personally, I like to use F5 BIG-IP's and CIS like I do in [this lab I commonly use](https://github.com/mikeoleary/azure-aks-kic-cis/). In any case, this lab assumes you're able to hit your NGINX Ingress Controller pod as described in the architectural overview.
 
 # Overview of lab architecture
-
+![Image of Application Architecture](images/nginx-ic-subrequest-auth.png)
 # Further enhancements (optional)
 This demo assumes a basic lab with a single ingress controller. However in production environments it is typical to see multiple ingress controllers, and some additional requirements:
 1. **Caching of authentication results.** The user experience can be improved by caching validation responses for a short time.
