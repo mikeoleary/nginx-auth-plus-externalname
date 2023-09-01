@@ -26,5 +26,5 @@ As I was setting up this lab, I made a few common mistakes. Here are some ideas 
 2. When deploying NGINX Plus Ingress Controller, make sure your command line arguments
     * Include the [argument to enable Plus](https://docs.nginx.com/nginx-ingress-controller/configuration/global-configuration/command-line-arguments/#-nginx-plus) (as opposed to open source)
     * Include the [argument to enable snippets](https://docs.nginx.com/nginx-ingress-controller/configuration/global-configuration/command-line-arguments/#-enable-snippets)
-3. When using ExternalName services, NGINX requires a resolver set in the ConfigMap. It's easy to mis-spell. It's "resolver-addresses" (plural, not singular). Check out my example ConfigMap.
+3. When using ExternalName services, NGINX requires a resolver set in the ConfigMap. It's easy to mis-spell. It's "resolver-addresses" (plural, not singular). Check out [my example ConfigMap](install/common/nginx-config.yaml).
 
